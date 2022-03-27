@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        background:steelblue;
+        transition: background 1s ease ;
+        animation : bluebg 1s;
+        animation-iteration-count: infinite;
+    }
+    .blue{
+        margin-top: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+
+        transition: width 1.5s ease;
+        animation: bluebeat 1.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes bluebeat {
+        0%, 50%, 100% {
+            transform: scale(1,1);
+        }
+        30%, 80%{
+            transform: scale(1.2,1.2);
+        }
+    }
+
+     @keyframes bluebg {
+        0%, 100% {
+            background: lightblue;
+        }
+
+        30%{
+            background: lightskyblue;
+        }
+
+        50%{
+            background: steelblue;
+        }
+
+        80%{
+            background: blue;
+        }
+    }
+</style>
+<body>
+
+    <div class="blue">
+        <img src="./blue-heart_1f499.png" alt="">
+    </div>
+</body>
+</html>
